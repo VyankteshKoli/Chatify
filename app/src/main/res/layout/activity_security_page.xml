@@ -117,7 +117,7 @@
                 android:id="@+id/datausage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="View Data Usage"
+                android:text="View Data Usages"
                 android:textColor="@color/goodgrey"
                 android:paddingBottom="24dp" />
 
