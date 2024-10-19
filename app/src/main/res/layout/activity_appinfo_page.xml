@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".AppinfoPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#586ECB"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/circularbordersolid"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chatify"
+                android:layout_marginTop="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/goodgrey"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 2.0.0"
+                android:textColor="@color/goodgrey"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/circularbordersolid"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="358dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="   Welcome to Chatify, more than just a messaging app. Chatify is a platform designed to bring people closer together, no matter where they are. With its user-friendly interface and robust features, Chatify offers a seamless communication experience that prioritizes your privacy and security."
+                android:textColor="@color/goodgrey"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Developed by :- Vyanktesh Koli"
+                android:textSize="16sp"
+                android:textColor="@color/goodgrey"
+                android:layout_marginBottom="7dp"
+                android:gravity="center"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/circularbordersolid"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="For More about Developer :-"
+            android:textColor="@color/goodgrey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="Contact:- vyankteshkoli8804@example.com"
+            android:textColor="@color/goodgrey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Privacy Policy"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="Terms of Service"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Send Feedback" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/telegram"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:src="@drawable/tele" />
+
+            <ImageView
+                android:id="@+id/instagram"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/insta" />
+
+            <ImageView
+                android:id="@+id/github"
+                android:layout_width="60dp"
+                android:layout_height="67dp"
+                android:src="@drawable/github" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

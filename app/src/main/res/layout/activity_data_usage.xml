@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DataUsage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Data Usage"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/total_data_usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5 GB"
+        android:textSize="16sp"
+        android:paddingBottom="24dp" />
+
+    <!-- Data Usage by Feature -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Usage by Feature"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Messaging Data Usage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Messaging"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/messaging_data_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 MB"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Media Data Usage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Media"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/media_data_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.5 GB"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Calls Data Usage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calls"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/calls_data_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 MB"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Graphical Representation (Placeholder) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Usage Chart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp" />
+
+</LinearLayout>
