@@ -31,7 +31,7 @@ public class SecurityPage extends AppCompatActivity {
         datausage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SecurityPage.this, "Data Usage: 22MB", Toast.LENGTH_LONG).show();
+                Toast.makeText(SecurityPage.this, "Data Usage: 52MB", Toast.LENGTH_LONG).show();
             }
         });
 
