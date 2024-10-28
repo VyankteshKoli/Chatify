@@ -80,19 +80,19 @@ public class LoginPage extends AppCompatActivity {
 
                 if (TextUtils.isEmpty(textEmail)) {
                     clearErrors();
-                    showValidationError(EmailLayout, "Email is required");
+                    showValidationError(EmailLayout, "Email is Required");
                 } else if (!Patterns.EMAIL_ADDRESS.matcher(textEmail).matches()) {
                     clearErrors();
-                    showValidationError(EmailLayout, "Please enter a valid email");
+                    showValidationError(EmailLayout, "Please Enter a Valid Email");
                 } else if (TextUtils.isEmpty(textPwd)) {
                     clearErrors();
-                    showValidationError(PasswordLayout, "Password is required");
+                    showValidationError(PasswordLayout, "Password is Required");
                 } else if (textPwd.length() < 6) {
                     clearErrors();
-                    showValidationError(PasswordLayout, "Password should be at least 6 characters");
+                    showValidationError(PasswordLayout, "Password should be at least 6 Characters");
                 } else if (!textPwd.matches(".*\\d.*")) {
                     clearErrors();
-                    showValidationError(PasswordLayout, "Password should contain at least one digit");
+                    showValidationError(PasswordLayout, "Password should contain at least one Digit");
                 } else {
                     clearErrors();
                     progressbar.setVisibility(View.VISIBLE);
