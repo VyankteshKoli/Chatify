@@ -48,18 +48,16 @@ public class LogoutPage extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Set the title of the toolbar to "Profile"
         getSupportActionBar().setTitle("Logout");
 
-        // Enable the back arrow
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle toolbar item clicks
+        
         if (item.getItemId() == android.R.id.home) {
-            // If back arrow clicked, navigate to HomePage
+            
             startActivity(new Intent(this, HomePage.class));
             return true;
         }
