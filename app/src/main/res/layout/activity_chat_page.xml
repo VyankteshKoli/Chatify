@@ -41,9 +41,8 @@
             android:textColor="#fff"
             android:gravity="center"/>
 
-    </LinearLayout>
-
-
+    </LinearLayoutLinearLayout>
+        
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/messageAdapter"
         android:layout_width="match_parent"
