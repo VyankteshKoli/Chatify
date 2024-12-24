@@ -21,11 +21,10 @@
         android:id="@+id/total_data_usage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5.4 GB"
+        android:text="5.7 GB"
         android:textSize="16sp"
         android:paddingBottom="24dp" />
 
-    <!-- Data Usage by Feature -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
