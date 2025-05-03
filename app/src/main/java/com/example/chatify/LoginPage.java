@@ -179,7 +179,7 @@ public class LoginPage extends AppCompatActivity {
             finish();
         }
         else{
-
+            Toast.makeText(LoginPage.this, "Login Failed", Toast.LENGTH_LONG).show();
         }
     }
 
