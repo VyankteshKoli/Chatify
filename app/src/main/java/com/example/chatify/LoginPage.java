@@ -45,7 +45,6 @@ public class LoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
 
-        // Initialize UI elements
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         loginBtn = findViewById(R.id.loginBtn);
@@ -54,12 +53,9 @@ public class LoginPage extends AppCompatActivity {
         EmailLayout = findViewById(R.id.EmailLayout);
         PasswordLayout = findViewById(R.id.PasswordLayout);
         progressbar = findViewById(R.id.progressbar);
-
-        // Initialize Firebase Auth
+        
         authProfile = FirebaseAuth.getInstance();
 
-
-        // Forgot button click listener
         forgotBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +64,6 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
-        // Signup button click listener
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +72,6 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
-        // Login button click listener
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,19 +80,19 @@ public class LoginPage extends AppCompatActivity {
 
                 if (TextUtils.isEmpty(textEmail)) {
                     clearErrors();
-                    showValidationError(EmailLayout, "Email is required");
+                    showValidationError(EmailLayout, "Email is Required");
                 } else if (!Patterns.EMAIL_ADDRESS.matcher(textEmail).matches()) {
                     clearErrors();
-                    showValidationError(EmailLayout, "Please enter a valid email");
+                    showValidationError(EmailLayout, "Please Enter a Valid Email");
                 } else if (TextUtils.isEmpty(textPwd)) {
                     clearErrors();
-                    showValidationError(PasswordLayout, "Password is required");
+                    showValidationError(PasswordLayout, "Password is Required");
                 } else if (textPwd.length() < 6) {
                     clearErrors();
-                    showValidationError(PasswordLayout, "Password should be at least 6 characters");
+                    showValidationError(PasswordLayout, "Password should be at least 6 Characters");
                 } else if (!textPwd.matches(".*\\d.*")) {
                     clearErrors();
-                    showValidationError(PasswordLayout, "Password should contain at least one digit");
+                    showValidationError(PasswordLayout, "Password should contain at least one Digit");
                 } else {
                     clearErrors();
                     progressbar.setVisibility(View.VISIBLE);
@@ -107,7 +101,6 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
-        // Password toggle visibility listener
         PasswordLayout.setEndIconOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -117,7 +110,7 @@ public class LoginPage extends AppCompatActivity {
                 } else {
                     password.setInputType(android.text.InputType.TYPE_CLASS_TEXT | android.text.InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                 }
-                password.setSelection(password.length());  // Move cursor to the end of the text
+                password.setSelection(password.length());  
             }
         });
     }
@@ -156,17 +149,17 @@ public class LoginPage extends AppCompatActivity {
         });
     }
     private void showAlertDialog() {
-        //Setup the Alert Builder
+        
         AlertDialog.Builder builder = new AlertDialog.Builder(LoginPage.this);
         builder.setTitle("Email Not Verified");
-        builder.setMessage("Please verify your email now. You cannot login without email verification.");
+        builder.setMessage("Please Verify Your Email Now. You Cannot Login Without Email Verification.");
         //Open Email Apps if User clicks/taps Continue button
         builder.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.addCategory(Intent.CATEGORY_APP_EMAIL);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // To email app in new window and not within our app
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
                 startActivity(intent);
             }
         });
@@ -186,7 +179,7 @@ public class LoginPage extends AppCompatActivity {
             finish();
         }
         else{
-
+            Toast.makeText(LoginPage.this, "Login Failed", Toast.LENGTH_LONG).show();
         }
     }
 

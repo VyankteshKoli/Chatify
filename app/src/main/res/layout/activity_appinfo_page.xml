@@ -63,7 +63,7 @@
                 android:layout_width="358dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="   Welcome to Chatify, more than just a messaging app. Chatify is a platform designed to bring people closer together, no matter where they are. With its user-friendly interface and robust features, Chatify offers a seamless communication experience that prioritizes your privacy and security."
+                android:text="Welcome to Chatify, more than just a Messaging app. Chatify is a platform designed to bring people closer together, no matter where they are. With its User-Friendly Interface and Robust Features, Chatify offers a seamless communication experience that prioritizes your Privacy and Security."
                 android:textColor="@color/goodgrey"
                 android:layout_gravity="center"
                 android:textSize="16sp" />

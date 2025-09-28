@@ -88,12 +88,9 @@ public class ProfilePage extends AppCompatActivity {
                 PHONE.setText(phone);
                 STATUS.setText(status);
                 Picasso.get().load(image).into(PROFILEIMAGE);
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
 
@@ -101,7 +98,8 @@ public class ProfilePage extends AppCompatActivity {
             checkIfEmailVerified(firebaseUser);
             progressBar.setVisibility(View.VISIBLE);
         } else {
-            showToast("Something went wrong! User's details are not available at the moment");
+            showToast("Something went Wrong! User's Details are not Available at the Moment");
+
         }
     }
 
@@ -114,7 +112,7 @@ public class ProfilePage extends AppCompatActivity {
     private void showAlertDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(ProfilePage.this);
         builder.setTitle("Email Not Verified");
-        builder.setMessage("Please verify your email now. You cannot log in without email verification.");
+        builder.setMessage("Please verify your Email now. You cannot log in without Email Verification.");
 
         builder.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
             @Override
